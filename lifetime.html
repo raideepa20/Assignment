@@ -1,0 +1,21 @@
+<html>
+<head>
+<h1><center>THE LIFETIME SUPPLY CALCULATOR</h1>
+</head>
+<script>
+function CalculateSupply(age,amount)
+{
+  var maxAge=100;
+  var totalNeeded=Math.round((amount*365)*(maxAge-age));
+  document.write("You will need "+totalNeeded+" to last you until the ripe old age of "+age);
+}
+</script>
+<form>
+<p><center>"ENTER AN PRESENT AGE:"</p>
+<center><input type="text" font="TIMES NEW ROMAN" size="35" name="age" id="age"><br>
+<p><center>"ENTER THE AMOUNT PER DAY":</p>
+<center><input type="text"  name="amount" id="amount" /><br>
+<center><p><input type="button" value="calculate Snacks" onclick="CalculateSupply(document.getElementById('age').value,document.getElementById('amount').value);"/></p>
+</form>
+</body>
+</html>
